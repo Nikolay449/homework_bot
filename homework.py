@@ -27,9 +27,9 @@ HOMEWORK_VERDICTS = {
 
 
 logging.basicConfig(
-        level=logging.DEBUG,
-        filename='program.log',
-        format='%(asctime)s, %(levelname)s, %(message)s'
+    filename='program.log',
+    format='%(asctime)s, %(levelname)s, %(message)s',
+    level=logging.DEBUG
 )
 
 
