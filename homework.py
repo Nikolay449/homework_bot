@@ -107,9 +107,6 @@ def main():
     while True:
         try:
             response = get_api_answer(current_timestamp)
-            current_timestamp = response.get(
-                'current_date', int(time.time())
-            )
             homeworks = check_response(response)
             if homeworks:
                 message = parse_status(homeworks[0])
@@ -120,6 +117,7 @@ def main():
                 prev_msg = message
             else:
                 logging.info(message)
+            current_timestamp = response.get('current_date')
 
         except Exception as error:
             message = f'Сбой в работе программы: {error}'
