@@ -8,7 +8,7 @@ python telegram bot
 ### Запуск проекта:
 - _Клонировать репозиторий и перейти в него в командной строке:_
 ```
-git clone 
+git clone https://github.com/Nikolay449/homework_bot.git
 ```
 - _Cоздать и активировать виртуальное окружение:_
 ```
